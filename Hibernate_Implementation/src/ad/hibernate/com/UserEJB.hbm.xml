@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated Feb 23, 2016 11:41:00 AM by Hibernate Tools 3.4.0.CR1 -->
+
+<hibernate-mapping>
+   
+    <class name="ad.hibernate.com.UserEJB" table="users">
+        <id name="id" type="int">
+            <column name="ID" />
+            <generator class="increment" />
+        </id>
+        
+        <property name="firstName" type="java.lang.String">
+            <column name="FIRST_NAME" />
+        </property>
+        <property name="lastName" type="java.lang.String">
+            <column name="LAST_NAME" />
+        </property>
+        <property name="city" type="java.lang.String">
+            <column name="CITY" />
+        </property>
+        <property name="userid" type="java.lang.String">
+            <column name="USER_ID" />
+        </property>
+        <property name="passcode" type="java.lang.String">
+            <column name="PASSCODE" />
+        </property>
+    
+    </class>
+</hibernate-mapping>
